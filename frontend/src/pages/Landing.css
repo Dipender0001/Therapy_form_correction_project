@@ -1,0 +1,140 @@
+.landing-page {
+    min-height: 100vh;
+    background-color: var(--color-background);
+    background-image: radial-gradient(circle at top right, rgba(32, 201, 151, 0.05), transparent 40%),
+        radial-gradient(circle at bottom left, rgba(10, 37, 64, 0.05), transparent 40%);
+}
+
+.landing-nav {
+    /* background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+    border-bottom: 1px solid rgba(10, 37, 64, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.py-md {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+}
+
+.py-xs {
+    padding-top: var(--spacing-xs);
+    padding-bottom: var(--spacing-xs);
+}
+
+.px-sm {
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-xl {
+    margin-top: 4rem;
+}
+
+.mb-xl {
+    margin-bottom: 3rem;
+}
+
+.mt-xxl {
+    margin-top: 6rem;
+}
+
+.mb-xxl {
+    margin-bottom: 6rem;
+}
+
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bg-primary-light {
+    background-color: var(--color-primary-light);
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.rounded-full {
+    border-radius: var(--radius-full);
+}
+
+.rounded-xl {
+    border-radius: var(--radius-xl);
+}
+
+.border {
+    border: 1px solid;
+}
+
+.border-primary-light {
+    border-color: rgba(32, 201, 151, 0.2);
+}
+
+.border-gray-100 {
+    border-color: rgba(10, 37, 64, 0.05);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.feature-card {
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon-wrapper {
+    width: 64px;
+    height: 64px;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
