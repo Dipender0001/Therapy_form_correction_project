@@ -1,0 +1,113 @@
+.dashboard-page {
+    /* Dashboard specific styles */
+}
+
+.grid {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.stats-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.dashboard-content {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .dashboard-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+}
+
+.h-full {
+    height: 100%;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mb-xs {
+    margin-bottom: var(--spacing-xs);
+}
+
+.p-sm {
+    padding: var(--spacing-sm);
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.bg-success-light {
+    background-color: rgba(30, 189, 113, 0.1);
+}
+
+.text-warning {
+    color: var(--color-warning);
+}
+
+.bg-warning-light {
+    background-color: rgba(244, 180, 0, 0.1);
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.progress-chart-placeholder {
+    min-height: 250px;
+    border: 1px dashed rgba(10, 37, 64, 0.1);
+}
+
+.chart-bar {
+    opacity: 0.8;
+    animation: growUp 1s ease-out forwards;
+    transform-origin: bottom;
+}
+
+.chart-bar:hover {
+    opacity: 1;
+}
+
+@keyframes growUp {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.hover\:bg-background:hover {
+    background-color: var(--color-background);
+}
+
+.hover\:border-gray-100:hover {
+    border-color: rgba(10, 37, 64, 0.05);
+}
+
+.transition-colors {
+    transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}

@@ -1,0 +1,163 @@
+.exercise-page {
+    /* Exercise session specific styles */
+}
+
+.h-\[calc\(100vh-180px\)\] {
+    height: calc(100vh - 180px);
+}
+
+.bg-danger {
+    background-color: var(--color-danger);
+}
+
+.text-white {
+    color: var(--color-surface);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.bg-danger-light {
+    background-color: rgba(226, 76, 76, 0.1);
+    border-color: var(--color-danger);
+}
+
+.border-l-4 {
+    border-left-width: 4px;
+    border-left-style: solid;
+}
+
+.border-danger {
+    border-left-color: var(--color-danger);
+}
+
+.border-primary {
+    border-left-color: var(--color-primary);
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.stroke-current {
+    stroke: currentColor;
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.top-4 {
+    top: 1rem;
+}
+
+.right-4 {
+    right: 1rem;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-opacity-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+}
+
+.w-2 {
+    width: 0.5rem;
+}
+
+.h-2 {
+    height: 0.5rem;
+}
+
+.py-xl {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-gray-100 {
+    background-color: rgba(10, 37, 64, 0.05);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
