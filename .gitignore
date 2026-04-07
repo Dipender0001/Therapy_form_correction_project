@@ -1,0 +1,20 @@
+@"
+# Python
+venv/
+ai_model/venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Env
+.env
+*.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+"@ | Out-File -Encoding utf8 .gitignore
