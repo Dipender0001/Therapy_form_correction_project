@@ -12,6 +12,7 @@ def main():
         if not success:
             print("Failed to capture image")
             break
+        
 
         # Process the image for pose
         img = detector.find_pose(img)
